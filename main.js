@@ -1,3 +1,4 @@
+User
 // Animation Timeline
 const animationTimeline = () => {
   // Spit chars that needs to be animated individually
@@ -270,13 +271,11 @@ const animationTimeline = () => {
   // tl.timeScale(2);
 
   // Restart Animation on click
-  const replayLink = document.getElementById("replayLink");
-  replayLink.addEventListener("click", (event) => {
-    event.preventDefault(); // Prevent the default behavior of the link (e.g., navigating to a new page)
+  const replyBtn = document.getElementById("replay");
+  replyBtn.addEventListener("click", () => {
     tl.restart();
   });
 };
-
 
 // Import the data to customize and insert them into page
 const fetchData = () => {
