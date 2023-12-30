@@ -270,11 +270,13 @@ const animationTimeline = () => {
   // tl.timeScale(2);
 
   // Restart Animation on click
-  const replyBtn = document.getElementById("replay");
-  replyBtn.addEventListener("click", () => {
+  const replayLink = document.getElementById("replayLink");
+  replayLink.addEventListener("click", (event) => {
+    event.preventDefault(); // Prevent the default behavior of the link (e.g., navigating to a new page)
     tl.restart();
   });
 };
+
 
 // Import the data to customize and insert them into page
 const fetchData = () => {
